@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+:root{
+    --blue:#0188DF ;
+    --black:#354046 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: aliceblue;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top:0; left: 0;
+    padding:2rem 1rem;
+    z-index: 1000;
+}
+
+header a{
+    color: var(--black)
+}
+
+header a:hover{
+    color: var(--blue);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header .container .logo{
+    font-size: 4rem;
+    margin-left: 2%;
+  }
+
+  header .container .logo span{
+    color:var(--blue);
+    font-size: 130%;
+  }
+
+  header .nav ul{
+      margin-right: 0 ;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+  }
+
+header .nav ul li{
+    margin: 0 2rem;
+}
+
+header .nav ul li a{
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+.bar{
+    background-color: #0188DF;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    height: 3rem;
+    color:#fff;
+    font-size: 1.9rem;
+    text-align: justify;
+}
+
+/*
+.main{
+    top: 40%;
+    font-size: large;
+} */
+
+.careerimg1
+{
+    position: absolute;
+    top: 20%;
+    right: 70%;
+}
+
+.flexbox
+{
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-item
+{
+    margin: 10px;
+    border: 3px hidden black;
+    background-color: white;
+}
+
+.flexbox-item1
+{
+    width: 25%;
+    position: fixed;
+    top: 20%;
+    right: 72%;
+    min-height: 500px;
+    background-color: aliceblue;
+}
+
+    .box
+    {
+        position: relative;
+        width: 100%;
+        min-height: 100px;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:aliceblue;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .box::before
+    {
+        content: '';
+        position: absolute;
+        height: 100px;
+        width: 140%;
+        background: linear-gradient(#0026ff,#d400d4);
+        animation: animate 4s linear infinite;
+    }
+
+.box::after
+{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #0188DF;
+    border-radius: 16px;
+}
+
+    @keyframes animate
+    {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(350deg);
+        }
+    }
+
+
+    .box h3
+    {
+        position: relative;
+        color: white;
+        z-index: 10;
+
+    }
+
+        .box_CurrentOpenings
+        {
+            position: relative;
+            border: 1px solid white;
+            width: 100%;
+            min-height: 100px;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:aliceblue;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #0188DF;
+            
+        }
+
+        .box_Resume
+        {
+            position: relative;
+            border: 1px solid white;
+            width: 100%;
+            min-height: 100px;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:aliceblue;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #0188DF;
+            
+        }
+
+        .box_Touch
+        {
+            position: relative;
+            border: 1px solid white;
+            width: 100%;
+            min-height: 100px;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:aliceblue;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #0188DF;
+            
+        }
+
+
+    .flexbox-item1 h3
+    {
+        font-size: 45px;
+    }
+
+
+    .flexbox-item1 p
+    {
+        font-size: 30px;
+        color: white;
+    }
+
+
+.flexbox-item2
+{
+    width: 39%;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    height: 600px;
+    overflow-x: hidden;
+}
+
+            .flexbox-item2-part1
+            {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to right, white,aliceblue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+                    .opening1
+                    {
+                        width: 100%;
+                        background: linear-gradient(to right,aliceblue, white);
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+                    .opening2
+                    {
+                        width: 100%;
+                        background: linear-gradient(to right,aliceblue, white);
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+                    .opening3
+                    {
+                        width: 100%;
+                        background: linear-gradient(to right,aliceblue, white);
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+                    .opening4
+                    {
+                        width: 100%;
+                        background: linear-gradient(to right,aliceblue, white);
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+
+            .flexbox-item2-part2
+            {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to right, white,aliceblue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+
+                    hr.new5 {
+                        border: 10px solid #0188DF;
+                        border-radius: 5px;}
+
+
+                    label
+                    {font-size: 25px;}
+
+                    input[type=text] 
+                    {
+                        width: 100%;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        background-color: aliceblue;
+                        color: black;
+                        font-size: 25px;
+                    }
+
+                    input[type=file]::file-selector-button {
+                        border: 2px solid #6c5ce7;
+                        padding: .2em .4em;
+                        border-radius: .2em;
+                        background-color: #a29bfe;
+                        transition: 0.5s;
+                        font-size: 25px;
+                      }
+                      
+                      input[type=file]::file-selector-button:hover {
+                        background-color: aliceblue;
+                        border: 2px solid aliceblue;
+                        font-size: 25px;
+                      }
+
+                      hr.new6 {
+                        border: 10px solid #0188DF;
+                        border-radius: 5px;}
+
+            .flexbox-item2-part3
+            {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to right, white,aliceblue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .fieldname
+            {
+                font-size: 25px;
+                background-color: aliceblue;
+            }
+
+            .Experience
+            {
+                font-size: 25px;
+                background-color: aliceblue;
+            }
+
+            input[type=submit]
+            {
+                background-color: #0188DF;
+                border: 5px;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;}
+
+
+    .flexbox-item2 h3
+    {
+        font-size: 35px;
+    }
+
+    
+
+
+
+
+.flexbox-item3
+{
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    min-height: 300px;
+}
+
+            .flexbox-item3 h3
+            {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to right, white,aliceblue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 35px;
+            }
+
+            .select1
+            {
+                font-size: 25px;
+                background-color: aliceblue;}
+
+            .select2
+                {
+                    font-size: 25px;
+                    background-color: aliceblue;}
+
+                    textarea {
+                        width: 100%;
+                        height: 150px;
+                        padding: 12px 20px;
+                        box-sizing: border-box;
+                        border: 2px solid #ccc;
+                        border-radius: 4px;
+                        background-color: #f8f8f8;
+                        font-size: 20px;
+                        resize: none;
+                      }
+
+
+                      input[type=submit]
+                      {
+                          background-color: #0188DF;
+                          border: 5px;
+                          color: white;
+                          padding: 16px 32px;
+                          text-decoration: none;
+                          margin: 4px 2px;
+                          font-size: 25px;
+                          cursor: pointer;}
+                          
+
+    .flexbox-item3 p
+    {
+        font-size: 25px;
+    }
